@@ -1,7 +1,7 @@
-<!--# ASSESSMENT 2: FOUNDATIONS OF JAVASCRIPT-->
-<!--## Interview Practice Questions-->
+# ASSESSMENT 2: FOUNDATIONS OF JAVASCRIPT
+## Interview Practice Questions
 
-<!--### From memory, answer the following:-->
+### From memory, answer the following:
 
 1. What's the difference between =, ==, and === in JavaScript?
 
@@ -48,52 +48,66 @@ logIt()
 
   Your answer:outside
 
-  Researched answer:
+  Researched answer: undefined (should have declared all of your variables at the top of a scope block.)
+  
+  var text                  // hoisted to top of scope; text is undefined
+  text = 'outside'          // text is now assigned in place
+  logIt = function () {
+  var text;                 // hoisted to top of scope; text is undefined
+  console.log(text);        // spits out undefined
+  text = 'inside';          // text is now assigned in place.
+}
+logIt();
 
 
 2. What is JSON? How does it relate to javascript objects?
 
-  Your answer:
+  Your answer:helps transfer info from your computer to the server and back around
 
-  Researched answer:
+  Researched answer:JSON stands for JavaScript Object Notation. JSON is a lightweight format for storing and transporting data. JSON is often used when data is sent from a server to a web page.
 
 
 3. What does CRUD stand for?
 
-  Your answer:
+  Your answer:Create, Read, Update, Delete
 
-  Researched answer:
+  Researched answer: CRUD stands for Create, Read, Update and Delete. (Retrieve may occasionally be substituted for Read.) These functions are also descriptive of the data life cycle.
 
 
 4. What is a higher-order function?
 
-  Your answer:
+  Your answer: A function inside of a function that can also return a function? inception of functions???
 
-  Researched answer:
+  Researched answer: A higher-order function is a function that can take another function as an argument, or that returns a function as a result.
 
 
 5. Stretch: What is a closure, what is it good for and how do you recognize one?
 
-  Your answer:
+  Your answer: closure is when you and your ex accept that your relationship is over and you both feel a sense of resolution.
+  
+  im honestly not sure xD
 
-  Researched answer:
+  Researched answer: A closure gives you access to an outer function's scope from an inner function.In JavaScript, closures are created every time a function is created, at function creation time. ... The inner function will have access to the variables in the outer function scope, even after the outer function has returned.
 
 
 6. Stretch: What is an API?
 
-  Your answer:
+  Your answer:application program intelligence or interface (i think)? Used to store information
 
-  Researched answer:
+  Researched answer:An application programming interface (API), in the context of Java, is a collection of prewritten packages, classes, and interfaces with their respective methods, fields and constructors.
 
 
 ### Additional Feedback Questions.
 
 1. Do you have a suggestion for a Check In question?
 
+  What you did over the weekend? or if they dont want to disclose that then what is your favorite past time?
 
 
 2. What was your favorite topic this week?
 
-
+Classes and learning React. Preferebly the Lightswitch Challenge.
 
 3. What was your "A-ha!" moment this week?
+
+During the pig-latin Sebastian and I found out what we were doing wrong and it was a huge A-ha! moment for both of us.
